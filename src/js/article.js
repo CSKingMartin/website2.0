@@ -1,0 +1,1 @@
+//var article = require('../templates/partials/article.hbs');

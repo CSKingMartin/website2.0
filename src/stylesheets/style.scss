@@ -1,0 +1,188 @@
+$primColor: #349155;
+$secColor: #84ba9f;
+$backColor: #F5F5F5;
+$font: Ubuntu;
+$navfootHeight: 30px;
+
+@import "banner",
+"footer",
+"navbar";
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+body{
+
+	font-size: 1em;
+	font-family: $font;
+	margin: 0;
+	margin-bottom: 50px;
+	//position: relative;
+	background-color: $backColor;
+}
+
+#pageWrap {
+	height: 100%;
+	margin: auto; //this is centering the div class
+	width: 100%;
+	display: inline-block;
+
+}
+
+.headBox {
+	height: 60px;
+	margin-top: 0;
+	padding:0;
+	background-color: $primColor;
+	p{
+		margin: 0 auto;
+		font-size: 14pt;
+		padding: 20px;
+	}
+}
+
+.imgFilter {
+	height: 100%;
+	width: 100%;
+	background-color: $primColor;
+	opacity: .4;
+
+}
+
+.menu {
+	//vertical-align: top;
+	margin: 10px;
+	padding: 20px;
+	margin-left: 300px;
+	width: auto;
+	border: 2px solid $secColor;
+	background-opacity: .9;
+	background-color: white;
+	box-sizing: border-box;
+	position: relative;
+	overflow: auto;
+
+	.menuHeader {
+	margin: 40px;
+
+	p{
+		font-size: 14pt;
+	}
+	}
+	.body {
+	margin: 40px;
+	}
+
+	.menuContent {
+		display: inline-block;
+		margin: 20px;
+		float: left;
+		//width: 100%;
+
+		.menuHeader {
+			margin: 20px;
+		}
+		.body {
+			margin: 20px;
+		}
+	}
+		.smallCard {
+			float: left;
+			p {
+				margin-right: 0px;
+			}
+		}
+
+		&.right {
+			float: right;
+			text-align: right;
+		}
+	&.noSidebar {
+		margin-left: 10px;
+	}
+
+	&.rightIndent {
+		.menuContent{
+			width: 100%;
+			margin-right: -245px;
+		}
+		
+		.menuHeader {
+			margin-right: 245px;
+
+		}
+		.body {
+			margin-right: 245px;
+		}
+	}
+
+	&.leftIndent {
+		text-align: right;
+		
+		.menuContent {
+			width: 100%;
+			margin-left: -245px;
+			float: right;
+			margin-right: 20px;
+		}
+		.menuHeader {
+			margin-right: 20px;
+			margin-left: 245px;
+		}
+		.body {
+			margin-right: 20px;
+			margin-left: 245px;
+		}
+	}
+}	
+
+
+.sidebar {
+	float: left;
+	display: inline-block;
+	height: auto;
+	width: 280px;
+	background-color: white;
+	border: 2px solid $secColor;
+	padding: 0px;
+	margin: 10px;
+	
+
+	text-align: center;
+
+	//condenses the text in the sidebar. 
+	p, h1, h2, h3, h4 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+.smallCard{
+
+	//height: 245px;
+	width: 180px;
+	border: 2px solid $secColor;
+	background-color: $backColor;
+	position: relative;
+	margin: 20px;
+	
+	float: left;
+
+	p, h1, h2, h3, h4, h5 {
+	text-align: center;
+	margin: 0;
+	
+	}
+}
+
+
+
+@media screen and (max-width:1024px) {
+	.menu {
+		margin-left: 10px;
+	}
+	.sidebar {
+		display: none;
+	}
+}

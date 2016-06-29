@@ -1,0 +1,55 @@
+ul.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: $primColor;
+	width: 100%;
+
+	li {
+
+		float: left;
+		height: 100%;
+		a {
+
+			width: 70px;
+			display: inline-block;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			padding: 10px 30px;
+			-webkit-transition: background-color .5s ease-in,
+				color .5s;
+			transition: background-color .5s, color .5s ease-in;
+
+
+			&:hover{
+				background-color: white;
+				color: $primColor;
+
+			}
+		}
+		&.endItem {
+			float: right;
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+	ul.navbar {
+	float: center;
+
+		li {
+			width: 50%;
+
+			a {
+				width: auto;
+				display: block;
+				
+			}
+		}
+	}
+}
+
+
+

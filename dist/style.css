@@ -1,0 +1,172 @@
+#banner {
+  height: 80px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-image: url(./images/greenBanner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+footer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  background-color: #349155;
+  color: white;
+  text-align: center; }
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #349155;
+  width: 100%; }
+  ul.navbar li {
+    float: left;
+    height: 100%; }
+    ul.navbar li a {
+      width: 70px;
+      display: inline-block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 30px;
+      -webkit-transition: background-color .5s ease-in, color .5s;
+      transition: background-color .5s, color .5s ease-in; }
+      ul.navbar li a:hover {
+        background-color: white;
+        color: #349155; }
+    ul.navbar li.endItem {
+      float: right; }
+
+@media screen and (max-width: 1024px) {
+  ul.navbar {
+    float: center; }
+    ul.navbar li {
+      width: 50%; }
+      ul.navbar li a {
+        width: auto;
+        display: block; } }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  font-size: 1em;
+  font-family: Ubuntu;
+  margin: 0;
+  margin-bottom: 50px;
+  background-color: #F5F5F5; }
+
+#pageWrap {
+  height: 100%;
+  margin: auto;
+  width: 100%;
+  display: inline-block; }
+
+.headBox {
+  height: 60px;
+  margin-top: 0;
+  padding: 0;
+  background-color: #349155; }
+  .headBox p {
+    margin: 0 auto;
+    font-size: 14pt;
+    padding: 20px; }
+
+.imgFilter {
+  height: 100%;
+  width: 100%;
+  background-color: #349155;
+  opacity: .4; }
+
+.menu {
+  margin: 10px;
+  padding: 20px;
+  margin-left: 300px;
+  width: auto;
+  border: 2px solid #84ba9f;
+  background-opacity: .9;
+  background-color: white;
+  box-sizing: border-box;
+  position: relative;
+  overflow: auto; }
+  .menu .menuHeader {
+    margin: 40px; }
+    .menu .menuHeader p {
+      font-size: 14pt; }
+  .menu .body {
+    margin: 40px; }
+  .menu .menuContent {
+    display: inline-block;
+    margin: 20px;
+    float: left; }
+    .menu .menuContent .menuHeader {
+      margin: 20px; }
+    .menu .menuContent .body {
+      margin: 20px; }
+  .menu .smallCard {
+    float: left; }
+    .menu .smallCard p {
+      margin-right: 0px; }
+  .menu.right {
+    float: right;
+    text-align: right; }
+  .menu.noSidebar {
+    margin-left: 10px; }
+  .menu.rightIndent .menuContent {
+    width: 100%;
+    margin-right: -245px; }
+  .menu.rightIndent .menuHeader {
+    margin-right: 245px; }
+  .menu.rightIndent .body {
+    margin-right: 245px; }
+  .menu.leftIndent {
+    text-align: right; }
+    .menu.leftIndent .menuContent {
+      width: 100%;
+      margin-left: -245px;
+      float: right;
+      margin-right: 20px; }
+    .menu.leftIndent .menuHeader {
+      margin-right: 20px;
+      margin-left: 245px; }
+    .menu.leftIndent .body {
+      margin-right: 20px;
+      margin-left: 245px; }
+
+.sidebar {
+  float: left;
+  display: inline-block;
+  height: auto;
+  width: 280px;
+  background-color: white;
+  border: 2px solid #84ba9f;
+  padding: 0px;
+  margin: 10px;
+  text-align: center; }
+  .sidebar p, .sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4 {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.smallCard {
+  width: 180px;
+  border: 2px solid #84ba9f;
+  background-color: #F5F5F5;
+  position: relative;
+  margin: 20px;
+  float: left; }
+  .smallCard p, .smallCard h1, .smallCard h2, .smallCard h3, .smallCard h4, .smallCard h5 {
+    text-align: center;
+    margin: 0; }
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    margin-left: 10px; }
+  .sidebar {
+    display: none; } }
